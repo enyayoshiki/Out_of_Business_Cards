@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    
+    <TextView
+        android:id="@+id/companyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="156dp"
+        android:layout_marginLeft="68dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/company_hint"
+        />
+    <TextView
+        android:id="@+id/postalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/companyText"
+        app:layout_constraintStart_toStartOf="@id/companyText"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="@string/postal_hint"
+        />
+
+    <TextView
+        android:id="@+id/addressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/postalText"
+        app:layout_constraintStart_toStartOf="@id/postalText"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="@string/address_hint"
+        />
+
+
+
+    <TextView
+        android:id="@+id/telText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/addressText"
+        app:layout_constraintStart_toStartOf="@id/addressText"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="@string/tel_hint"
+        />
+
+    <TextView
+        android:id="@+id/faxText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/telText"
+        app:layout_constraintStart_toStartOf="@id/telText"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+       android:text="@string/fax_hint"
+        />
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/faxText"
+        app:layout_constraintStart_toStartOf="@id/faxText"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="@string/email_hint"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/urlText"
+        app:layout_constraintTop_toTopOf="@id/emailText"
+        app:layout_constraintLeft_toRightOf="@id/emailText"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="@string/url_hint"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameText"
+        app:layout_constraintTop_toTopOf="@id/companyText"
+        android:layout_marginLeft="232dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="@string/name_hint"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/positionText"
+        app:layout_constraintBottom_toTopOf="@id/nameText"
+        app:layout_constraintStart_toStartOf="@id/nameText"
+        android:layout_marginBottom="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:text="@string/position_hint"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
