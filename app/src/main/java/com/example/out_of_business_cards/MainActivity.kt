@@ -56,7 +56,8 @@ class MainActivity() : AppCompatActivity(), Parcelable {
                 val intent = Intent(this, EditActivity::class.java)
                 startActivity(intent)
             }
-            return super.onOptionsItemSelected(item) -> true
+            return super.onOptionsItemSelected(item)
         }
 
     }
+}

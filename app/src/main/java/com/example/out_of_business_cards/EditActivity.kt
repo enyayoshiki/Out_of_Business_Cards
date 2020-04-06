@@ -46,7 +46,6 @@ class EditActivity : AppCompatActivity() {
 
     }
 
-
         private fun saveData() {
             val pref = PreferenceManager.getDefaultSharedPreferences(this)
             val editor = pref.edit()
